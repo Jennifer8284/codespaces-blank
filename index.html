@@ -1,1 +1,143 @@
-<h1>Hello World!</h1>
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Mim</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.container{
+background:white;
+padding:40px;
+border-radius:15px;
+width:90%;
+max-width:800px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+animation:fadeIn 1.5s ease;
+}
+
+img{
+width:150px;
+border-radius:50%;
+margin-bottom:15px;
+transition:0.4s;
+}
+
+img:hover{
+transform:scale(1.1) rotate(5deg);
+}
+
+h1{
+margin-bottom:10px;
+}
+
+p{
+color:#555;
+margin-bottom:20px;
+}
+
+.skills{
+margin:20px 0;
+}
+
+.skill{
+display:inline-block;
+background:#4facfe;
+color:white;
+padding:8px 15px;
+border-radius:20px;
+margin:5px;
+transition:0.3s;
+}
+
+.skill:hover{
+background:#0077ff;
+transform:translateY(-5px);
+}
+
+button{
+background:#4facfe;
+border:none;
+color:white;
+padding:12px 25px;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#0077ff;
+transform:scale(1.1);
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="https://via.placeholder.com/150" alt="Minha Foto">
+
+<h1>Seu Nome</h1>
+
+<p>
+Olá! Eu sou uma pessoa apaixonada por tecnologia, programação e aprendizado.
+Este é um exemplo de página pessoal com animações em HTML e CSS.
+</p>
+
+<h2>Habilidades</h2>
+
+<div class="skills">
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">Design</span>
+</div>
+
+<h2>Informações</h2>
+
+<p>📍 Cidade: Sua cidade</p>
+<p>📧 Email: seuemail@email.com</p>
+
+<br>
+
+<button onclick="alert('Obrigado por visitar minha página!')">
+Clique aqui
+</button>
+
+</div>
+
+</body>
+</html>
+```
